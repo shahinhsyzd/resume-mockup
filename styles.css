@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Zen+Dots&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato',
+        sans-serif;
+    /* font-family: 'Zen Dots',
+cursive; */
+}
+
+:root {
+    --primary-background-color: #edf2fc;
+    --font-color: #292929;
+    --hover: #ff5d5d;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-background-color);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+header div {
+    width: 60px;
+    height: 60px
+}
+
+header div img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--hover);
+}
+
+
+/* SHOWCASE */
+.showcase {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TEXT */
+.text {
+    padding-right: 10%;
+    width: 50%;
+}
+
+.text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.text h1 span {
+    color: var(--hover);
+    /* margin-bottom: 70px; */
+}
+
+.text p {
+    margin: 10px 0 50px;
+    font-size: 0.9rem;
+}
+
+.text a {
+    padding: 0.8rem 1.6rem;
+    background-color: var(--font-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.text a:hover {
+    background-color: var(--hover);
+}
+
+/* IMAGES */
+.images {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    height: 625px;
+    /* padding: 20px; */
+    transition: 1s;
+}
+
+.images img {
+    position: absolute;
+    cursor: pointer;
+}
+
+.images img:first-child {
+    z-index: 1;
+    height: 100%;
+    transition: 1s;
+}
+
+.images img:nth-child(2) {
+    width: 80%;
+    transition: 1s;
+}
+
+.images:hover img:first-child {
+    margin-left: 10%;
+}
+
+.images:hover img:nth-child(2) {
+    padding-right: 10%;
+}
+
+/* ABOUT  */
+
+/* .about {
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: #fffbfb;
+} */
+
+/* .about div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+} */
+
+/* .about div h1 {
+    font-size: 2.6rem;
+    padding-bottom: 2rem;
+}
+
+.about div p {
+    line-height: 1.6rem;
+} */
+
+/* PORTFOLIO */
+
+.portfolio {
+    /* width: 100%;
+    height: 100vh; */
+}
+
+/* CONTACT ME */
+
+.contact {
+    /* width: 100%;
+    height: 100vh; */
+}
